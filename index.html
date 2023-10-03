@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Макет сайта</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: #222;
+    }
+
+    .container {
+      width: 100%;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+    .left-col {
+      width: 15%;
+      height: 650px;
+      float: left;
+      background-color:black;
+    }
+    ul li a {
+        color: aliceblue;
+    }
+
+    .left-col ul li {
+      background-color: green;
+      border: 2px solid red;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      height: 100px;
+      background-color: blue;
+      border-bottom: 10px solid #000;
+    }
+
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: aliceblue;
+    }
+
+
+    .content {
+      height: 650px;
+      background-color:chartreuse;
+    }
+
+    .footer {
+      height: 206px;
+      background-color:aquamarine;
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .left-col {
+        width: 25%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 style="text-align: center">Серик Алдияр ПО2210к</h1>
+    </header>
+    <div class="content">
+      <div class="left-col">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+      </div>
+    </div>
+    <footer class="footer">
+    </footer>
+  </div>
+</body>
+</html>
